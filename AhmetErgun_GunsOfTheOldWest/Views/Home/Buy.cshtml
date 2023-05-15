@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Buy bullets";
+}
+
+
+<div class="buy-container">
+    <form method="post" asp-controller="Home" asp-action="Bought">
+    <div>
+        <input type="hidden" name="bullets2" value="2" />
+        <button id="buyButtons" type="submit">Buy 2 bullets for 1 euros</button>
+    </div>
+</form>
+<form method="post" asp-controller="Home" asp-action="Bought">
+    <div>
+        <input type="hidden" name="bullets7" value="7" />
+        <button id="buyButtons"  type="submit">Buy 7 bullets for 4 euros</button>
+    </div>
+</form>
+<form method="post" asp-controller="Home" asp-action="Bought">
+    <div>
+        <input type="hidden" name="bullets12" value="12" />
+        <button id="buyButtons" type="submit">Buy 12 bullets for 7 euros</button>
+    </div>
+</form>
+</div>
